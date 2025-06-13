@@ -2,11 +2,11 @@
 require('dotenv').config();
 
 const Hapi = require('@hapi/hapi');
-const authRoutes = require('./routes/authRoutes');
-const genreRoutes = require('./routes/genre');
-const filmRoutes = require('./routes/film');
-const recomendationRoutes = require('./routes/recommendation');
-const optionsRoutes = require('./routes/optionsRoutes');
+const authRoutes = require('./src/routes/authRoutes');
+const genreRoutes = require('./src/routes/genre');
+const filmRoutes = require('./src/routes/film');
+const recomendationRoutes = require('./src/routes/recommendation');
+const optionsRoutes = require('./src/routes/optionsRoutes');
 
 const init = async () => {
     const server = Hapi.server({
